@@ -14,7 +14,7 @@ class Grupo:
 
     def agregarAlumno(self, alumno, lista=[]):
         lista.append(alumno)
-        self.listadoAlumnos = self.listadoAlumnos + lista
+        self.listadoAlumnos.extend(lista)
 
     def __str__(self):
         return f"Grupo de estudiantes: {self._grupo}"
